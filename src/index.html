@@ -6,62 +6,139 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <main class="h-lvh w-full grid grid-cols-2 grid-rows-6">
-      <section class="row-span-5 flex justify-end">
-        <img class="max-w-96" src="./assets/insta-img.png" alt="cellphone" />
-      </section>
-      <section class="row-span-5">
-        <form action="">
-          <img class="w-52" src="./assets/insta-logo.png" alt="" />
-          <input type="text" placeholder="telefone, nome de usuario ou email" />
-          <input type="text" placeholder="senha" />
-          <button>Entrar</button>
-          <div>
-            <a href="">Entrar com o Facebook</a>
+    <main
+      class="h-full w-screen grid justify-center items-center grid-cols-2 grid-rows-6 gap-4"
+    >
+      <!-- imagen principal -->
 
-            <p>Esqueceo a senha?</p>
+      <section class="row-span-5 flex justify-end">
+        <img class="max-w-98" src="./assets/insta-img.png" alt="cellphone" />
+      </section>
+
+      <!-- formulario de login -->
+
+      <section
+        class="row-span-5 flex flex-col justify-center items-start grid-cols-1 gap-2"
+      >
+        <form
+          action=""
+          class="w-85 flex flex-col justify-center items-center gap-2 border border-gray-300 px-10 py-8"
+        >
+          <i
+            class="mb-5"
+            data-visualcompletion="css-img"
+            aria-label="Instagram"
+            class=""
+            role="img"
+            style="
+              background-image: url('https://static.cdninstagram.com/rsrc.php/v4/yB/r/E7m8ZCMOFDS.png');
+              background-position: 0px -52px;
+              background-size: auto;
+              width: 175px;
+              height: 51px;
+              background-repeat: no-repeat;
+              display: inline-block;
+            "
+          ></i>
+
+          <input
+            class="w-full bg-gray-50 border border-gray-300 rounded-sm h-9 placeholder:text-xs pl-2"
+            type="text"
+            placeholder="Telefone, nome de usuario ou email"
+          />
+
+          <input
+            class="w-full bg-gray-50 border border-gray-300 rounded-sm h-9 placeholder:text-xs pl-2"
+            type="text"
+            placeholder="Senha"
+          />
+          <button
+            class="w-full bg-sky-600 px-4 py-1 mt-2 text-white font-semibold hover:bg-sky-700 rounded-lg"
+          >
+            Entrar
+          </button>
+
+          <span class="text-gray-500 text-sm py-4">OU</span>
+
+          <div class="flex flex-col text-center gap-4">
+            <a
+              href=""
+              class="text-sky-600 font-semibold flex gap-2 items-center"
+            >
+              <svg
+                class=""
+                aria-label="Entrar com o Facebook"
+                class=""
+                fill="currentColor"
+                height="20"
+                role="img"
+                viewBox="0 0 16 16"
+                width="20"
+              >
+                <g clip-path="url(#a)">
+                  <path
+                    d="M8 0C3.6 0 0 3.6 0 8c0 4 2.9 7.3 6.8 7.9v-5.6h-2V8h2V6.2c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.3V8h2.2l-.4 2.3H9.2v5.6C13.1 15.3 16 12 16 8c0-4.4-3.6-8-8-8Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+              <p class="text-sm hover:text-sky-900">Entrar com o Facebook</p>
+            </a>
+            <a href="" class="text-sm text-sky-900">Esqueceo a senha?</a>
           </div>
         </form>
-        <div>
-          <p>não tem conta? <span>Cadastre-se</span></p>
+        <div
+          class="w-85 h-18 flex justify-center items-center border border-gray-300"
+        >
+          <p class="text-sm">
+            Não tem conta?
+            <a href="" class="text-sky-600 font-semibold">Cadastre-se</a>
+          </p>
         </div>
-        <div>
-          <h3>obtenha O aplitivo.</h3>
-          <div>
+        <div
+          class="w-85 flex flex-col gap-4 text-sm justify-center items-center"
+        >
+          <h3>Obtenha o aplicativo.</h3>
+          <div class="flex gap-2">
             <img
               class="h-10"
               src="./assets/apple.png"
               alt="logo da Apple para descargar a app"
             />
+            <img
+              class="h-10"
+              src="./assets/google.png"
+              alt="logo da Google para descargar a app"
+            />
           </div>
-          <img
-            class="h-10"
-            src="./assets/google.png"
-            alt="logo da Google para descargar a app"
-          />
         </div>
       </section>
+
+      <!-- footer -->
+
+      <footer
+        class="row-span-1 col-span-2 flex flex-col justify-center items-center text-xs gap-4 text-gray-500"
+      >
+        <ul class="flex gap-4 justify-center items-center">
+          <li>Meta</li>
+          <li>Sobre</li>
+          <li>Blog</li>
+          <li>Carreiras</li>
+          <li>Ajuda</li>
+          <li>API</li>
+          <li>Privacidade</li>
+          <li>Termos</li>
+          <li>Localizações</li>
+          <li>Instagram Lite</li>
+          <li>Threads</li>
+          <li>Upload de contatos e não usuários</li>
+          <li>Meta Verified</li>
+        </ul>
+        <ul class="flex gap-4">
+          <li>Português (Brasil)</li>
+          <li>© 2025 Instagram from Meta</li>
+        </ul>
+      </footer>
     </main>
-    <footer class="row-span-1">
-      <ul>
-        <li>Meta</li>
-        <li>Sobre</li>
-        <li>Blog</li>
-        <li>Carreiras</li>
-        <li>Ajuda</li>
-        <li>API</li>
-        <li>Privacidade</li>
-        <li>Termos</li>
-        <li>Localizações</li>
-        <li>Instagram Lite</li>
-        <li>Threads</li>
-        <li>Upload de contatos e não usuários</li>
-        <li>Meta Verified</li>
-      </ul>
-      <ul>
-        <li>Português (Brasil)</li>
-        <li>© 2025 Instagram from Meta</li>
-      </ul>
-    </footer>
   </body>
 </html>
